@@ -1,0 +1,64 @@
+.todo {
+  max-width: calc(100vw - 20px);
+  width: 300px;
+  margin: 20px auto;
+}
+
+.todo input {
+  padding: 5px 10px;
+  font-size: 12px;
+  border-radius: 3px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.deadline {
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  background-color: white;
+  padding: 5px 20px;
+  color: black;
+  cursor: pointer;
+  width: 100px;
+}
+
+.todo .todo-options {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin: 15px 0;
+  gap: 15px;
+}
+
+select {
+  height: 30px;
+  width: 150px;
+}
+
+.todo button {
+  padding: 5px 10px;
+}
+
+.todos {
+  align-items: center;
+  display: flex;
+}
+
+.todo-container {
+  margin-top: 20px;
+}
+
+.box {
+  height: 20px;
+  width: 20px;
+}
+
+.todo-flex {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  width: 300px;
+}

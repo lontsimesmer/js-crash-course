@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript</title>
+    <link rel="stylesheet" href="../todo.css" />
+  </head>
+  <body style="background-color: black; color: white">
+    <!-- <h1 id="heading1">
+      This is a text
+      <span id="span1">This is a span</span>
+    </h1>
+    <h2 class="heading">This is another &reg;&trade;; heading</h2>
+    <button>impossible to hover</button>
+    <input type="text" id="bestInput" />
+
+    <form action="">
+      <input name="name" />
+      <input name="email" />
+      <input name="country" />
+      <input name="address" />
+      <input name="phone" />
+    </form>
+    <button id="Submit">Submit</button> -->
+    <div class="todo">
+      <form action="">
+        <h1>Todo List</h1>
+        <label for="todo">
+          <input type="text" name="todo" id="todo" />
+          <div class="todo-options">
+            <label for="">
+              Priority
+              <select name="priority">
+                <option value="high">High</option>
+                <option value="medium">Medium</option>
+                <option value="low">Low</option>
+              </select>
+            </label>
+            <label for="">
+              Deadline
+              <input type="date" id="todo" />
+            </label>
+          </div>
+        </label>
+        <button>Add</button>
+      </form>
+      <div class="todos">
+        <div class="todo-container">
+          <div class="todo-flex">
+            <input type="checkbox" class="box" />
+            <div class="flex">
+              <p>First todo</p>
+              <p>04-10-23 10:28</p>
+            </div>
+            <div class="flex">
+              <p>High</p>
+              <p>04-10-23 10:28</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="todo1.js"></script>
+</html>
