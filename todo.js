@@ -36,21 +36,29 @@ const todos = [
   },
 ];
 
+function markTodoAsDone(id) {
+  console.log({id});
+}
+
 function renderTodo(todo) {
   return `
   <div class="todo">
-    <div class="todo-flex">
-      <input type="checkbox" class="box" />
-        <div class="flex">
-          <p>${todo.name}</p>
-          <p>${todo.createdAt}</p>
+    <div class="todo-content">
+      <div class="todo-flex">
+        <div class="contain">
+          <input type="checkbox" class="box" onchange="markTodoAsDone(${todo.id})" />
+          <div class="flex">
+            <p>${todo.name}</p>
+            <span class="tag">${todo.priority}</span>
+          </div>
         </div>
         <div class="flex">
-          <p>${todo.priority}</p>
           <p>${todo.deadline}</p>
+          <p>${todo.createdAt}</p>
         </div>
       </div>
     </div>
+  </div>
   `;
 }
 
@@ -58,7 +66,6 @@ function renderTodos() {
   const html = todos.map(renderTodo).join("");
   container.innerHTML = html;
 }
-
 renderTodos();
 
 todoForm.addEventListener("submit", (e) => {
@@ -68,6 +75,8 @@ todoForm.addEventListener("submit", (e) => {
     deadline: e.target.deadline.value,
     priority: e.target.priority.value,
     createdAt: new Date().toUTCString().slice(0, 19),
-    id: e.target.id.value,
+    id: Date.now(),
   };
+  todos.push(newTodo);
+  renderTodos();
 });

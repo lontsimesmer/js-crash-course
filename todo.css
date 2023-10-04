@@ -1,15 +1,28 @@
-.todo {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.todo-container {
   max-width: calc(100vw - 20px);
-  width: 300px;
+  width: 450px;
   margin: 20px auto;
 }
 
-.todo input {
+h1 {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+input {
+  border: none;
+  height: 30px;
   padding: 5px 10px;
   font-size: 12px;
   border-radius: 3px;
   width: 100%;
-  box-sizing: border-box;
+  outline: none;
 }
 
 .deadline {
@@ -19,46 +32,81 @@
 
 button {
   background-color: white;
+  border: none;
+  border-radius: 3px;
   padding: 5px 20px;
   color: black;
   cursor: pointer;
   width: 100px;
 }
 
-.todo .todo-options {
+.todo-options {
   display: flex;
   align-items: center;
-  width: 100%;
+  gap: 10px;
   margin: 15px 0;
-  gap: 15px;
 }
 
 select {
+  border: none;
+  border-radius: 3px;
   height: 30px;
-  width: 150px;
+  outline: none;
+  width: 220px;
 }
 
-.todo button {
-  padding: 5px 10px;
+.date-input {
+  height: 32px;
+  width: 220px;
 }
 
 .todos {
-  align-items: center;
   display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+  width: 100%;
 }
 
-.todo-container {
-  margin-top: 20px;
+.todo-content {
+  align-items: center;
+  background-color: darkolivegreen;
+  border-radius: 3px;
+  display: flex;
+  height: 70px;
 }
 
 .box {
-  height: 20px;
-  width: 20px;
+  height: 15px;
+  width: 15px;
 }
 
 .todo-flex {
   align-items: center;
   display: flex;
   justify-content: space-between;
-  width: 300px;
+  margin: auto 15px;
+  width: 100%;
+}
+
+.contain {
+  align-items: center;
+  display: flex;
+  gap: 15px;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.tag {
+  align-items: center;
+  background-color: orange;
+  border-radius: 3px;
+  display: flex;
+  height: 25px;
+  justify-content: center;
+  width: 50px;
 }
