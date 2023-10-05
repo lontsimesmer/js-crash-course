@@ -36,19 +36,31 @@ const todos = [
   },
 ];
 
-function markTodoAsDone(id) {
-  console.log({id});
+function markTodoAsDone(index) {
+  todos[index].done = !todos[index].done;
+  renderTodos();
 }
 
-function renderTodo(todo) {
+function animateOutAndDeleteTodo() {
+  setTimeout(() => {
+    if (todos[index].done) {
+      todos[index].deleted = true;
+      renderTodos();
+    }
+  }, 3000);
+}
+
+function renderTodo(todo, index) {
   return `
   <div class="todo">
     <div class="todo-content">
       <div class="todo-flex">
         <div class="contain">
-          <input type="checkbox" class="box" onchange="markTodoAsDone(${todo.id})" />
+          <input type="checkbox" class="box" onchange="markTodoAsDone(${index})" ${
+    todo.done ? "checked" : ""
+  } />
           <div class="flex">
-            <p>${todo.name}</p>
+            <p ${todo.done ? "crossed" : ""}>${todo.name}</p>
             <span class="tag">${todo.priority}</span>
           </div>
         </div>

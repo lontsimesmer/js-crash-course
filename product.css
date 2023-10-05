@@ -1,0 +1,39 @@
+body {
+  margin: 0;
+}
+
+.products {
+  max-width: 1200px;
+  display: grid;
+  margin: auto;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.products .product {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.products .product .caroussel {
+  height: 300px;
+  width: 100px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.products .product .details {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.products .product .details * {
+  margin: 0;
+}
+
+.products .product .thumbnail {
+  object-fit: cover;
+  width: 70px;
+  height: 70px;
+  border-radius: 10px;
+}

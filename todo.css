@@ -71,12 +71,14 @@ select {
 .todo-content {
   align-items: center;
   background-color: darkolivegreen;
-  border-radius: 3px;
+  border-radius: 5px;
   display: flex;
   height: 70px;
+  transition: margin-left 0.3s ease-out;
 }
 
 .box {
+  cursor: pointer;
   height: 15px;
   width: 15px;
 }
@@ -84,6 +86,7 @@ select {
 .todo-flex {
   align-items: center;
   display: flex;
+  font-size: small;
   justify-content: space-between;
   margin: auto 15px;
   width: 100%;
@@ -103,10 +106,18 @@ select {
 
 .tag {
   align-items: center;
-  background-color: orange;
-  border-radius: 3px;
+  background-color: rgba(255, 166, 0, 0.431);
+  border-radius: 4px;
   display: flex;
-  height: 25px;
   justify-content: center;
-  width: 50px;
+  padding: 2px 4px;
+}
+
+.todo .crossed {
+  text-decoration: line-through;
+}
+
+.todo.deleted {
+  margin-left: 100vw;
+  max-width: 100%;
 }
