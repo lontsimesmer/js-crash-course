@@ -37,7 +37,7 @@ const todos = [
 ];
 
 function markTodoAsDone(index) {
-  todos[index].done = !todos[index].done;
+  todos[index].done = true;
   renderTodos();
 }
 
@@ -56,17 +56,15 @@ function renderTodo(todo, index) {
     <div class="todo-content">
       <div class="todo-flex">
         <div class="contain">
-          <input type="checkbox" class="box" onchange="markTodoAsDone(${index})" ${
-    todo.done ? "checked" : ""
-  } />
+          <input type="checkbox" class="box" onchange="markTodoAsDone(${index})" ${todo.done? "checked": ""} />
           <div class="flex">
-            <p ${todo.done ? "crossed" : ""}>${todo.name}</p>
+            <p ${todo.done? "crossed": ""}>${todo.name}</p>
             <span class="tag">${todo.priority}</span>
           </div>
         </div>
-        <div class="flex">
-          <p>${todo.deadline}</p>
+        <div class="flexe">
           <p>${todo.createdAt}</p>
+          <p>before: ${todo.deadline}</p>
         </div>
       </div>
     </div>
