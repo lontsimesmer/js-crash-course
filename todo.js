@@ -37,7 +37,7 @@ const todos = [
 ];
 
 function markTodoAsDone(index) {
-  todos[index].done = true;
+  todos[index].done = false;
   renderTodos();
 }
 
