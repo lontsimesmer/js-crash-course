@@ -10,6 +10,16 @@
   margin: 20px auto;
 }
 
+.todo-container input[type="text"],
+.todo-container[type="date"] {
+  border: black;
+  border-radius: 3px;
+  font-size: 12px;
+  height: 32px;
+  padding: 5px 10px;
+  width: 100%;
+}
+
 h1 {
   margin-bottom: 15px;
   text-align: center;
@@ -74,7 +84,7 @@ select {
   border-radius: 5px;
   display: flex;
   height: 70px;
-  transition: margin-left 0.3s ease-out;
+  transition: all 0.5s ease-out;
 }
 
 .box {

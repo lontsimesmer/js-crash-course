@@ -46,6 +46,9 @@ function animateOutAndDeleteTodo() {
     if (todos[index].done) {
       todos[index].deleted = true;
       renderTodos();
+      setTimeout(() => {
+        todos.slice(index, 1)
+      }, 3500);
     }
   }, 3000);
 }
