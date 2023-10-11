@@ -6,14 +6,7 @@
     <title>Javascript</title>
     <link rel="stylesheet" href="../todo.css" />
   </head>
-  <body
-    style="
-      background-color: black;
-      color: white;
-      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
-        'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    "
-  >
+  <body style="background-color: black; color: white">
     <!-- <div class="products">
       <div class="product">
         <div class="carousel">
@@ -44,16 +37,11 @@
     <div class="todo-container">
       <form action="">
         <label for="todo">
-          <h1>Todo List</h1>
-          <input
-            type="text"
-            placeholder="input todo here"
-            name="todo"
-            id="todo"
-          />
+          Todo List
+          <input type="text" name="todo" id="todo" />
         </label>
         <div class="todo-options">
-          <label for="priority">
+          <label for="">
             Priority
             <select name="priority">
               <option disabled>Select an option</option>
@@ -62,9 +50,9 @@
               <option value="low">Low</option>
             </select>
           </label>
-          <label for="deadline">
+          <label for="">
             Deadline
-            <input type="date" name="deadline" class="date-input" />
+            <input type="date" name="deadline" />
           </label>
         </div>
         <button>Add</button>

@@ -5,74 +5,73 @@ const todos = [
   {
     id: "1",
     name: "First todo",
-    deadline: "12-12-2023 10:30",
     priority: "low",
-    createdAt: "04-05-2023 11:20",
+    deadline: "11-07-2023 10:00",
+    createdAt: "04-06-2023 10:00",
     done: false,
   },
   {
     id: "2",
     name: "Second todo",
-    deadline: "12-12-2023 10:30",
     priority: "high",
-    createdAt: "04-05-2023 11:20",
+    deadline: "12-08-2023 10:30",
+    createdAt: "04-05-2023 11:30",
     done: true,
   },
   {
     id: "3",
     name: "Third todo",
-    deadline: "12-12-2023 10:30",
     priority: "low",
-    createdAt: "04-05-2023 11:20",
+    deadline: "10-09-2023 10:00",
+    createdAt: "08-09-2023 12:00",
     done: false,
   },
   {
     id: "4",
     name: "Fouth todo",
-    deadline: "12-12-2023 10:30",
     priority: "high",
-    createdAt: "04-05-2023 11:20",
+    deadline: "12-10-2023 11:30",
+    createdAt: "04-10-2023 12:30",
     done: true,
   },
 ];
 
 function markTodoAsDone(index) {
-  todos[index].done = false;
+  todos[index].done = !todos[index].done;
+  todos[index].deleted = false;
   renderTodos();
+  animateTodoOutAndDelete(index);
 }
 
-function animateOutAndDeleteTodo() {
+function animateTodoOutAndDelete(index) {
   setTimeout(() => {
     if (todos[index].done) {
       todos[index].deleted = true;
       renderTodos();
       setTimeout(() => {
-        todos.slice(index, 1)
-      }, 3500);
+        todos.slice(index, 1);
+        renderTodos();
+      }, 400);
     }
   }, 3000);
 }
 
 function renderTodo(todo, index) {
-  return `
-  <div class="todo">
-    <div class="todo-content">
-      <div class="todo-flex">
-        <div class="contain">
-          <input type="checkbox" class="box" onchange="markTodoAsDone(${index})" ${todo.done? "checked": ""} />
-          <div class="flex">
-            <p ${todo.done? "crossed": ""}>${todo.name}</p>
-            <span class="tag">${todo.priority}</span>
-          </div>
-        </div>
-        <div class="flexe">
-          <p>${todo.createdAt}</p>
-          <p>before: ${todo.deadline}</p>
-        </div>
+  return `<div class="todo flex ${todo.deleted ? "deleted" : ""}">
+    <input type="checkbox" onchange="markTodoAsDone(${index})" ${
+    todo.done ? "checked" : ""
+  }>
+    <div class="details">
+      <div class="flex">
+        <p class="flex" ${todo.done ? "crossed" : ""}>${todo.name}</p>
+        <p class="time">${todo.createdAt}</p>
+      </div>
+      <div class="flex">
+        <p class="priority">${todo.priority}</p>
+        <p class="time">before: ${todo.deadline}</p>
       </div>
     </div>
-  </div>
-  `;
+  </div>`;
 }
 
 function renderTodos() {
