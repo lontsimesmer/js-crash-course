@@ -6,6 +6,10 @@
   width: 500px;
 }
 
+h1 {
+  text-align: center;
+}
+
 .todo-container input[type="text"],
 .todo-container input[type="date"] {
   border: black;
