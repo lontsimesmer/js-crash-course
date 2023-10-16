@@ -84,7 +84,7 @@ todoForm.addEventListener("submit", (e) => {
   e.preventDefault();
   const newTodo = {
     name: e.target.todo.value,
-    deadline: e.target.deadline.value,
+    deadline: e.target.date.value,
     priority: e.target.priority.value,
     createdAt: new Date().toUTCString().slice(0, 19),
     id: Date.now(),

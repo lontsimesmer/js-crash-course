@@ -39,13 +39,13 @@
         <h1>Todo List</h1>
         <label for="todo">
           Todo
-          <input type="text" name="todo" id="todo" />
+          <input type="text" value="todo" name="todo" id="todo" />
         </label>
         <div class="todo-options">
           <label for="priority">
             Priority
             <select name="priority">
-              <option disabled>Select an option</option>
+              <option disabled="true">Select an option</option>
               <option value="high">High</option>
               <option value="medium">Medium</option>
               <option value="low">Low</option>
@@ -53,7 +53,7 @@
           </label>
           <label for="date">
             Deadline
-            <input type="date" name="date" id="date" />
+            <input type="date" value="date" name="date" id="date" />
           </label>
         </div>
         <button>Add</button>
@@ -61,7 +61,12 @@
       <div class="todos">
         <div class="todo-content">
           <div class="todo-flex">
-            <input type="checkbox" name="checkbox" id="checkbox" />
+            <input
+              type="checkbox"
+              value="checkbox"
+              name="checkbox"
+              id="checkbox"
+            />
             <div class="flex">
               <p>First todo</p>
               <p>04-10-23 10:28</p>
