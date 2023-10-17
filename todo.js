@@ -58,9 +58,9 @@ function animateTodoOutAndDelete(index) {
 
 function renderTodo(todo, index) {
   return `<div class="todo flex ${todo.deleted ? "deleted" : ""}">
-    <input type="checkbox" name="checkbox" id="checkbox" onchange="markTodoAsDone(${index})" ${
+    <input type="checkbox" name="checkbox" value="checkbox" onchange="markTodoAsDone(${index})" ${
     todo.done ? "checked" : ""
-  }>
+  } />
     <div class="details">
       <div class="flex">
         <p class="flex" ${todo.done ? "crossed" : ""}>${todo.name}</p>

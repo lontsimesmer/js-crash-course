@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Javascript</title>
     <link rel="stylesheet" href="../todo.css" />
+    <link rel="shortcut icon" href="favicon.ico" />
   </head>
   <body style="background-color: black; color: white">
     <!-- <div class="products">
@@ -39,12 +40,12 @@
         <h1>Todo List</h1>
         <label for="todo">
           Todo
-          <input type="text" value="todo" name="todo" id="todo" />
+          <input type="text" name="todo" id="todo" autocomplete="off" />
         </label>
         <div class="todo-options">
           <label for="priority">
             Priority
-            <select name="priority">
+            <select id="priority" name="priority">
               <option disabled="true">Select an option</option>
               <option value="high">High</option>
               <option value="medium">Medium</option>
@@ -53,27 +54,24 @@
           </label>
           <label for="date">
             Deadline
-            <input type="date" value="date" name="date" id="date" />
+            <input type="date" name="date" id="date" />
           </label>
         </div>
         <button>Add</button>
       </form>
       <div class="todos">
         <div class="todo-content">
-          <div class="todo-flex">
-            <input
-              type="checkbox"
-              value="checkbox"
-              name="checkbox"
-              id="checkbox"
-            />
-            <div class="flex">
-              <p>First todo</p>
-              <p>04-10-23 10:28</p>
-            </div>
-            <div class="flex">
-              <p>High</p>
-              <p>04-10-23 10:28</p>
+          <div class="todo flex">
+            <input type="checkbox" name="checkbox" id="checkbox" />
+            <div class="details">
+              <div class="flex">
+                <p class="flex">First todo</p>
+                <p class="date">04-10-23 10:28</p>
+              </div>
+              <div class="flex">
+                <p class="priority">High</p>
+                <p class="date">04-10-23 10:28</p>
+              </div>
             </div>
           </div>
         </div>
