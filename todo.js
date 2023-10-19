@@ -16,7 +16,7 @@ const todos = [
     priority: "high",
     deadline: "12-08-2023 10:30",
     createdAt: "04-05-2023 11:30",
-    done: true,
+    done: false,
   },
   {
     id: "3",
@@ -32,13 +32,13 @@ const todos = [
     priority: "high",
     deadline: "12-10-2023 11:30",
     createdAt: "04-10-2023 12:30",
-    done: true,
+    done: false,
   },
 ];
 
 function markTodoAsDone(index) {
-  todos[index].done = !todos[index].done;
   todos[index].deleted = false;
+  todos[index].done = !todos[index].done;
   renderTodos();
   animateTodoOutAndDelete(index);
 }
@@ -49,7 +49,7 @@ function animateTodoOutAndDelete(index) {
       todos[index].deleted = true;
       renderTodos();
       setTimeout(() => {
-        todos.slice(index, 1);
+        todos.splice(index, 1);
         renderTodos();
       }, 400);
     }
@@ -58,12 +58,12 @@ function animateTodoOutAndDelete(index) {
 
 function renderTodo(todo, index) {
   return `<div class="todo flex ${todo.deleted ? "deleted" : ""}">
-    <input type="checkbox" name="checkbox" value="checkbox" onchange="markTodoAsDone(${index})" ${
+    <input type="checkbox" onchange="markTodoAsDone(${index})" ${
     todo.done ? "checked" : ""
   } />
     <div class="details">
       <div class="flex">
-        <p class="flex" ${todo.done ? "crossed" : ""}>${todo.name}</p>
+        <p class="flex ${todo.done ? "crossed" : ""}">${todo.name}</p>
         <p class="time">${todo.createdAt}</p>
       </div>
       <div class="flex">
