@@ -60,7 +60,7 @@ function renderTodo(todo, index) {
   return `<div class="todo flex ${todo.deleted ? "deleted" : ""}">
     <input type="checkbox" onchange="markTodoAsDone(${index})" ${
     todo.done ? "checked" : ""
-  } />
+  } id="checkbox" />
     <div class="details">
       <div class="flex">
         <p class="flex ${todo.done ? "crossed" : ""}">${todo.name}</p>
@@ -86,7 +86,7 @@ todoForm.addEventListener("submit", (e) => {
     name: e.target.todo.value,
     deadline: e.target.date.value,
     priority: e.target.priority.value,
-    createdAt: new Date().toUTCString().slice(0, 19),
+    createdAt: new Date().toLocaleString().slice(0, 15),
     id: Date.now(),
   };
   todos.push(newTodo);
