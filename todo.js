@@ -74,7 +74,6 @@ function formatDate(date) {
     ].join(":")
   );
 }
-console.log(formatDate(new Date()));
 
 function renderTodo(todo, index) {
   return `<div class="todo flex ${todo.deleted ? "deleted" : ""}">
