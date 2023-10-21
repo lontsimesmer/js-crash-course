@@ -58,10 +58,15 @@ h1 {
   flex: 1;
   gap: 15px;
   justify-content: space-between;
+  padding-top: 5px;
 }
 
 .todo .details {
   flex: 1;
+}
+
+.box {
+  cursor: pointer;
 }
 
 .todo {
@@ -74,10 +79,11 @@ h1 {
 
 .todo p {
   margin: 0;
+  font-size: 15px;
 }
 
 .todo .time {
-  font-size: 9px;
+  font-size: 0.6rem;
 }
 
 .todo .priority {

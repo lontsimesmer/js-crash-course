@@ -56,11 +56,31 @@ function animateTodoOutAndDelete(index) {
   }, 3000);
 }
 
+function convertTimeDigits(num) {
+  return num.toString().padStart(2, "0");
+}
+
+function formatDate(date) {
+  return (
+    [
+      date.getFullYear(),
+      convertTimeDigits(date.getUTCMonth() + 1),
+      convertTimeDigits(date.getUTCDate()),
+    ].join("-") +
+    " " +
+    [
+      convertTimeDigits(date.getUTCHours()),
+      convertTimeDigits(date.getUTCMinutes()),
+    ].join(":")
+  );
+}
+console.log(formatDate(new Date()));
+
 function renderTodo(todo, index) {
   return `<div class="todo flex ${todo.deleted ? "deleted" : ""}">
-    <input type="checkbox" onchange="markTodoAsDone(${index})" ${
+    <input type="checkbox" class="box" onchange="markTodoAsDone(${index})" ${
     todo.done ? "checked" : ""
-  } id="checkbox" />
+  } />
     <div class="details">
       <div class="flex">
         <p class="flex ${todo.done ? "crossed" : ""}">${todo.name}</p>
@@ -86,7 +106,7 @@ todoForm.addEventListener("submit", (e) => {
     name: e.target.todo.value,
     deadline: e.target.date.value,
     priority: e.target.priority.value,
-    createdAt: new Date().toLocaleString().slice(0, 15),
+    createdAt: formatDate(new Date()),
     id: Date.now(),
   };
   todos.push(newTodo);
