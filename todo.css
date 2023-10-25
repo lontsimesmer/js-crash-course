@@ -12,7 +12,7 @@ h1 {
 
 .todo-container input[type="text"],
 .todo-container input[type="date"] {
-  border: black;
+  border: #000;
   border-radius: 3px;
   box-sizing: border-box;
   font-size: 12px;
@@ -88,7 +88,7 @@ h1 {
 
 .todo .priority {
   background-color: rgba(255, 166, 0, 0.431);
-  border: 1px solid orange;
+  border: 1px solid	#ffa500;
   border-radius: 4px;
   justify-content: center;
   padding: 2px 4px;
