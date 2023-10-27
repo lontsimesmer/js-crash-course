@@ -40,13 +40,7 @@
         <h1>Todo List</h1>
         <label for="todo">
           Todo
-          <input
-            type="text"
-            name="todo"
-            id="todo"
-            autocomplete="off"
-            required
-          />
+          <input type="text" name="todo" id="todo" autocomplete="off" />
         </label>
         <span aria-hidden="true" id="todoError" role="alert"
           >Please enter a todo</span
@@ -63,10 +57,10 @@
           </label>
           <label for="date">
             Deadline
-            <input type="date" name="deadline" id="date" required />
+            <input type="date" name="deadline" id="date" />
           </label>
         </div>
-        <button>Add</button>
+        <button id="submit">Add</button>
       </form>
       <div class="todos">
         <div class="todo-content">
