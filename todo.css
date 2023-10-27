@@ -77,6 +77,19 @@ h1 {
   transition: all 0.3s ease-out;
 }
 
+#todoError {
+  display: none;
+  font-size: 0.8em;
+}
+
+#todoError.visible {
+  display: block;
+}
+
+input.valid {
+  border-color: #ff4500;
+}
+
 .todo p {
   margin: 0;
   font-size: 15px;
@@ -89,7 +102,7 @@ h1 {
 .todo .priority {
   align-items: center;
   background-color: rgba(255, 166, 0, 0.431);
-  border: 1px solid	#ffa500;
+  border: 1px solid #ffa500;
   border-radius: 4px;
   justify-content: center;
   padding: 2px 4px;
