@@ -78,6 +78,7 @@ h1 {
 }
 
 #todoError {
+  color: #ff4500;
   display: none;
   font-size: 0.8em;
 }
