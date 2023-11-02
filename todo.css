@@ -88,7 +88,7 @@ h1 {
   display: block;
 }
 
-#todo.valid {
+#todo.invalid {
   border-color: #ff4500;
 }
 

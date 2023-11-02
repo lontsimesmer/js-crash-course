@@ -1,6 +1,5 @@
 const todoForm = document.querySelector(".todo-container form");
 const container = document.querySelector(".todos");
-const submit = document.getElementById("submit");
 
 const todos = [
   {
@@ -36,6 +35,20 @@ const todos = [
     done: false,
   },
 ];
+
+function requiredInput(e) {
+  e.preventDefault();
+  const todoField = document.getElementById("todo");
+  let valid = true;
+  if (!todoField.value) {
+    const todoError = document.getElementById("todoError");
+    todoError.classList.add("visible");
+    todoField.classList.add("invalid");
+    todoError.setAttribute("aria-hidden", false);
+    todoError.setAttribute("aria-invalid", true);
+  }
+  return valid;
+}
 
 function markTodoAsDone(index) {
   todos[index].deleted = false;
@@ -97,20 +110,6 @@ function renderTodo(todo, index) {
 function renderTodos() {
   const html = todos.map(renderTodo).join("");
   container.innerHTML = html;
-  function requiredInput(e) {
-    e.preventDefault();
-    const todoField = document.getElementById("todo");
-    let valid = true;
-    if (!todoField.value) {
-      const todoError = document.getElementById("todoError");
-      todoError.classList.add("visible");
-      todoField.classList.add("invalid");
-      todoError.setAttribute("aria-hidden", false);
-      todoError.setAttribute("aria-invalid", true);
-    }
-    return valid;
-  }
-  requiredInput(e)
 }
 renderTodos();
 
