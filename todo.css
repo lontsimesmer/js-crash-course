@@ -111,6 +111,7 @@ h1 {
 }
 
 .todo .crossed {
+  border-color: #000;
   text-decoration: line-through;
 }
 
