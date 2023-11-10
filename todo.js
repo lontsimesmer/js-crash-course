@@ -44,7 +44,7 @@ nameInput.addEventListener("todo", () => {
 });
 
 nameInput.addEventListener("invalid", () => {
-  nameInput.setCustomValidity("Please fill in your Todo.");
+  nameInput.setCustomValidity("Please enter your Todo.");
 });
 
 // function requiredInput(e) {
