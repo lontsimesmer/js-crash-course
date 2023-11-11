@@ -1,6 +1,6 @@
 const todoForm = document.querySelector(".todo-container form");
 const container = document.querySelector(".todos");
-const nameInput = document.getElementById("todo");
+const todoInput = document.getElementById("todo");
 
 const todos = [
   {
@@ -37,14 +37,14 @@ const todos = [
   },
 ];
 
-nameInput.addEventListener("todo", () => {
-  nameInput.setCustomValidity("");
-  nameInput.checkValidity();
-  console.log(nameInput.checkValidity());
+todoInput.addEventListener("todo", () => {
+  todoInput.setCustomValidity("");
+  todoInput.checkValidity();
+  console.log(todoInput.checkValidity());
 });
 
-nameInput.addEventListener("invalid", () => {
-  nameInput.setCustomValidity("Please enter your Todo.");
+todoInput.addEventListener("invalid", () => {
+  todoInput.setCustomValidity("Please enter your Todo.");
 });
 
 // function requiredInput(e) {
@@ -135,5 +135,4 @@ todoForm.addEventListener("submit", (e) => {
   };
   todos.push(newTodo);
   renderTodos();
-  // requiredInput(e);
 });
