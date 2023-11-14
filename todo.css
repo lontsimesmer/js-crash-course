@@ -35,7 +35,9 @@ h1 {
 }
 
 .todo-container .todo-options * {
+  align-items: center;
   flex: 1;
+  justify-content: center;
 }
 
 #checkbox {

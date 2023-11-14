@@ -1,6 +1,6 @@
 const todoForm = document.querySelector(".todo-container form");
 const container = document.querySelector(".todos");
-// const todoInput = document.getElementById("todo");
+const todoInput = document.getElementById("todo");
 const dateInput = document.getElementById("date");
 
 const todos = [
@@ -38,15 +38,15 @@ const todos = [
   },
 ];
 
-// todoInput.addEventListener("todo", () => {
-//   todoInput.setCustomValidity("");
-//   todoInput.checkValidity();
-//   console.log(todoInput.checkValidity());
-// });
+todoInput.addEventListener("todo", () => {
+  todoInput.setCustomValidity("");
+  todoInput.checkValidity();
+  console.log(todoInput.checkValidity());
+});
 
-// todoInput.addEventListener("invalid", () => {
-//   todoInput.setCustomValidity("Please enter your Todo.");
-// });
+todoInput.addEventListener("invalid", () => {
+  todoInput.setCustomValidity("Please enter your Todo.");
+});
 
 dateInput.addEventListener("date", () => {
   dateInput.setCustomValidity("");
