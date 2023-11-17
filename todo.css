@@ -64,7 +64,9 @@ h1 {
 }
 
 .todo .details {
+  align-items: center;
   flex: 1;
+  justify-content: center;
 }
 
 .box {
