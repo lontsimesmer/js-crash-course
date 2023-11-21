@@ -99,9 +99,9 @@ function convertTimeDigits(num) {
 function formatDate(date) {
   return (
     [
-      date.getFullYear(),
-      convertTimeDigits(date.getUTCMonth() + 1),
       convertTimeDigits(date.getUTCDate()),
+      convertTimeDigits(date.getUTCMonth() + 1),
+      date.getFullYear(),
     ].join("-") +
     " " +
     [
