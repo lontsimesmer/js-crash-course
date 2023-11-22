@@ -21,6 +21,10 @@ h1 {
   width: 100%;
 }
 
+input::-webkit-datetime-edit, input::-webkit-inner-spin-button, input::-webkit-clear-button {
+  display: none;
+}
+
 .todo-container select {
   height: 30px;
   width: 100%;
