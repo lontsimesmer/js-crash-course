@@ -45,7 +45,7 @@ todoInput.addEventListener("todo", () => {
 });
 
 todoInput.addEventListener("invalid", () => {
-  todoInput.setCustomValidity("Please enter your Todo.");
+  todoInput.setCustomValidity("Please enter your Todo here.");
 });
 
 dateInput.addEventListener("date", () => {
@@ -61,13 +61,13 @@ dateInput.addEventListener("invalid", () => {
 function requiredInput(e) {
   e.preventDefault();
   const todoField = document.getElementById("todo");
-  let valid = true;
+  let valid = false;
   if (!todoField.value) {
     const todoError = document.getElementById("todoError");
     todoError.classList.add("visible");
     todoField.classList.add("invalid");
-    todoError.setAttribute("aria-hidden", false);
-    todoError.setAttribute("aria-invalid", true);
+    todoError.setAttribute("aria-hidden", true);
+    todoError.setAttribute("aria-invalid", false);
   }
   return valid;
 }

@@ -1,19 +1,19 @@
-let products = [];
+let products = []
 
-async function loadProducts() {
-  const response = await fetch("https://dummyjson.com/products");
+async function loadProducts () {
+  const response = await fetch('https://dummyjson.com/products')
   //   .then(
   //     (response) => response.json()
   //   );
-  return await response.json();
+  return await response.json()
 }
 
 loadProducts().then((data) => {
-  products = data.products;
+  products = data.products
   //   renderAllProducts();
-});
+})
 
-function renderSingleproduct(product) {
+function renderSingleproduct (product) {
   return `
   <div class="products">
   <div class="product">
@@ -32,9 +32,9 @@ function renderSingleproduct(product) {
   <div>a</div>
   <div>a</div>
 </div>
-    `;
+    `
 }
 
-function renderAllProducts() {
-    
+function renderAllProducts () {
+
 }

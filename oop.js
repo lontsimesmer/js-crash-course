@@ -88,28 +88,30 @@
 // Using class getters and setters
 
 class Student {
-  constructor (name, email, batch){
-    this.name = name;
-    this.batch=batch;
-    this.email=email;
-  }
-  print = () =>{
-          console.log(`${this.formatemail} ${this.email} is from ${this.batch} batch`);
-        }
-  get formatemail(){
-    return `${this.email}`;
+  constructor (name, email, batch) {
+    this.name = name
+    this.batch = batch
+    this.email = email
   }
 
-  set formatemail(value){
-    const [name,email] = value.split("(");
-    this.name =name;
-    this.email = email.split(")")[0];
+  print = () => {
+    console.log(`${this.formatemail} ${this.email} is from ${this.batch} batch`)
+  }
+
+  get formatemail () {
+    return `${this.email}`
+  }
+
+  set formatemail (value) {
+    const [name, email] = value.split('(')
+    this.name = name
+    this.email = email.split(')')[0]
   }
 }
 
-  const dorine = new Student("Dorine", "dorine@gmail.com", "july 23");
-  const nora = new Student("nora", "nora@gmail.com", "october 23" );
+const dorine = new Student('Dorine', 'dorine@gmail.com', 'july 23')
+const nora = new Student('nora', 'nora@gmail.com', 'october 23')
 
- dorine.print();
- nora.print()
- nora.formatemail = "myra@gmail.com"
+dorine.print()
+nora.print()
+nora.formatemail = 'myra@gmail.com'
