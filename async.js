@@ -52,7 +52,7 @@ async function loadNumbers() {
 
 // Try-Catch method
 
-async function loadNumbers() {
+async function loadNumber() {
   try {
     let time = 300;
     console.log(1);

@@ -1,4 +1,4 @@
-let products = []
+// let products = []
 
 async function loadProducts () {
   const response = await fetch('https://dummyjson.com/products')
@@ -34,7 +34,4 @@ function renderSingleproduct (product) {
 </div>
     `
 }
-
-function renderAllProducts () {
-
-}
+renderSingleproduct()
