@@ -11,7 +11,7 @@ for (const h of headings) {
 }
 
 // by TagName
-const button = document.getElementsByTagName('h1')
+// const button = document.getElementsByTagName('h1')
 
 // querySelector
 const specificHeading = document.querySelector('h1.heading#heading1')

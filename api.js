@@ -9,7 +9,7 @@ async function loadProducts () {
 }
 
 loadProducts().then((data) => {
-  products = data.products
+  // products = data.products
   //   renderAllProducts();
 })
 
