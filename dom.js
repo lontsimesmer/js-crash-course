@@ -49,3 +49,6 @@ myForm.addEventListener('submit', (e) => {
     address: e.target.address.value
   }
 })
+
+const valueChecked = true
+console.log(typeof(valueChecked));
