@@ -14,13 +14,16 @@ declareVariables = (_result) => {
   console.log($a); // Jesus
   let _b = "Holly";
   console.log(_b); // Holly
-
-  // Js Keywords can't be variable names
-//   let type = "object";
-//   const name = new type(arguments);
-//   console.log(name); // The keyword here is new
-
-//   const array = Array.fill(0);
-//   console.log(array); // The keyword here is Array.fill
 };
 declareVariables(result);
+
+
+// Const declaration using const
+
+const results = 7
+declareConstants = (_results) => {
+  console.log(results);
+  const x = 5;
+  console.log(x);
+}
+declareConstants(results)
