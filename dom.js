@@ -51,4 +51,4 @@ myForm.addEventListener('submit', (e) => {
 })
 
 const valueChecked = true
-console.log(typeof(valueChecked));
+console.log(typeof (valueChecked))
