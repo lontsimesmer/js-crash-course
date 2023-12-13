@@ -42,5 +42,9 @@ dataTypes = (_result2) => {
   // Number
   const number = 3e5
   console.log(number);
+  const number1 = 3/0
+  console.log(number1);
+  const number2 = 'abc'/3
+  console.log(number2);
 }
 dataTypes(result2)
