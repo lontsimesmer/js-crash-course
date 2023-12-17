@@ -48,5 +48,11 @@ dataTypes = (_result2) => {
   const value = 900719925124740998n;
   const result1 = value + 1n;
   console.log(result1);
+
+  // undefined
+  let age
+  console.log(age);
+  const result2 = undefined
+  console.log(result2);
 };
 dataTypes(result2);
