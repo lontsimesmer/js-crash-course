@@ -54,5 +54,11 @@ dataTypes = (_result2) => {
   console.log(age);
   const result2 = undefined
   console.log(result2);
+
+  // Typeof operator
+  const firstName = 'Lontsi'
+  console.log(typeof(firstName));
+  const _class = 1
+  console.log(typeof(_class));
 };
 dataTypes(result2);
