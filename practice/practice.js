@@ -2,7 +2,6 @@
 
 const result = 6;
 declareVariables = (_result) => {
-  console.log(result); // 6
   let x;
   console.log(x); // undefined
   const y = 2;
@@ -16,7 +15,7 @@ declareVariables = (_result) => {
 };
 declareVariables(result);
 
-// Const declaration using const
+// Constants declaration using const
 
 const result1 = 7;
 declareConstants = (_result1) => {
@@ -50,15 +49,28 @@ dataTypes = (_result2) => {
   console.log(result1);
 
   // undefined
-  let age
+  let age;
   console.log(age);
-  const result2 = undefined
+  const result2 = undefined;
   console.log(result2);
 
   // Typeof operator
-  const firstName = 'Lontsi'
-  console.log(typeof(firstName));
-  const _class = 1
-  console.log(typeof(_class));
+  const firstName = "Lontsi";
+  console.log(typeof firstName);
+  const _class = 1;
+  console.log(typeof _class);
+  const a = null;
+  console.log(typeof(a));
 };
 dataTypes(result2);
+
+// Operators in javascript
+
+const result3 = 9;
+writeOperations = (_result3) => {
+  let x = 2;
+  y = 3;
+  const add = x + y;
+  console.log("x + y =", add);
+};
+writeOperations(result3);
