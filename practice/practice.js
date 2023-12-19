@@ -72,5 +72,11 @@ writeOperations = (_result3) => {
   y = 3;
   const add = x + y;
   console.log("x + y =", add);
+  const minus = x - y
+  console.log('x - y =', minus);
+  const multiple = x * y
+  console.log('x * y =', multiple);
+  const divide = x / y
+  console.log('x / y =', divide);
 };
 writeOperations(result3);
