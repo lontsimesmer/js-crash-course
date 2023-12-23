@@ -60,7 +60,7 @@ dataTypes = (_result2) => {
   const _class = 1;
   console.log(typeof _class);
   const a = null;
-  console.log(typeof(a));
+  console.log(typeof a);
 };
 dataTypes(result2);
 
@@ -72,11 +72,19 @@ writeOperations = (_result3) => {
   y = 3;
   const add = x + y;
   console.log("x + y =", add);
-  const minus = x - y
-  console.log('x - y =', minus);
-  const multiple = x * y
-  console.log('x * y =', multiple);
-  const divide = x / y
-  console.log('x / y =', divide);
+  const minus = x - y;
+  console.log("x - y =", minus);
+  const multiple = x * y;
+  console.log("x * y =", multiple);
+  const divide = x / y;
+  console.log("x / y =", divide);
+  const remainder = x % y;
+  console.log("x % y =", remainder);
+  const increase = ++x;
+  console.log("++x =", increase);
+  console.log("++x =", x++);
+  const decrease = --y;
+  console.log("--y =", decrease);
+  console.log("--y =", y--);
 };
 writeOperations(result3);
