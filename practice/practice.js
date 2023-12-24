@@ -86,5 +86,7 @@ writeOperations = (_result3) => {
   const decrease = --y;
   console.log("--y =", decrease);
   console.log("--y =", y--);
+  const exponent = x ** y
+  console.log(exponent);
 };
 writeOperations(result3);
