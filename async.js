@@ -49,6 +49,7 @@ async function fetchNumber () {
   await sleep(time)
   console.log('Done')
 }
+fetchNumber ()
 
 // Try-Catch method
 
@@ -66,6 +67,7 @@ async function loadNumber () {
     console.trace(error)
   }
 }
+loadNumber()
 
 // Return several promises
 
