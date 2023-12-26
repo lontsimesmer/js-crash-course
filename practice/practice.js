@@ -68,6 +68,7 @@ dataTypes(result2);
 
 const result3 = 9;
 writeOperations = (_result3) => {
+  // Arithmetic
   let x = 2;
   y = 3;
   const add = x + y;
@@ -88,5 +89,17 @@ writeOperations = (_result3) => {
   console.log("--y =", y--);
   const exponent = x ** y
   console.log(exponent);
+
+  // Comparison
+  let a = 1, b = 2, c = 3
+  console.log(a == a);
+  console.log(2 == '2');
+  console.log(a == 'a');
+  console.log(a != b);
+  console.log(b != c);
+  console.log(b === b);
+  console.log(b === 'b');
+  console.log(c !== 'c');
+  console.log(c !== c);
 };
 writeOperations(result3);
