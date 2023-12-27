@@ -101,5 +101,6 @@ writeOperations = (_result3) => {
   console.log(b === 'b')
   console.log(c !== 'c')
   console.log(c !== c)
+  console.log(a > b);
 }
 writeOperations(result3)
