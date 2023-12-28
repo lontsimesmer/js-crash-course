@@ -3,7 +3,7 @@
 function sleep (time) {
   return new Promise((resolve, reject) => {
     if (time > 2000) {
-      reject('Too big value')
+      reject(new Error('Too big value'))
       return
     }
     setTimeout(() => {

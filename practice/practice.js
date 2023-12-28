@@ -69,8 +69,7 @@ dataTypes(result2)
 const result3 = 9
 writeOperations = (_result3) => {
   // Arithmetic
-  let x = 2
-  y = 3
+  let x = 2; let y = 3
   const add = x + y
   console.log('x + y =', add)
   const minus = x - y

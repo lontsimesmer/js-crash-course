@@ -68,6 +68,6 @@ function factorialSum (num) {
     fac = fac * i
     sum += fac
   }
-  console.log(fac)
+  console.log(sum)
 }
 factorialSum(num)

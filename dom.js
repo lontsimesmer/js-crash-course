@@ -14,7 +14,7 @@ for (const h of headings) {
 // const button = document.getElementsByTagName('h1')
 
 // querySelector
-const specificHeading = document.querySelector('h1.heading#heading1')
+// const specificHeading = document.querySelector('h1.heading#heading1')
 
 // querySelectorAll
 const heading2 = document.querySelectorAll('h1')
@@ -32,6 +32,8 @@ heading.style.border = '5px solid orange'
 const myImpossibleButton = document.querySelector('button')
 myImpossibleButton.addEventListener('mouseenter', (e) => {
   const newDiv = document.createElement('div')
+  newDiv.innerHTML = ''
+  heading2.innerText = ''
   heading.append(myImpossibleButton)
 })
 
@@ -48,6 +50,7 @@ myForm.addEventListener('submit', (e) => {
     email: e.target.value,
     address: e.target.address.value
   }
+  console.log(person)
 })
 
 const valueChecked = true
