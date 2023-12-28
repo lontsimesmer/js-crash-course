@@ -101,17 +101,20 @@ writeOperations = (_result3) => {
   console.log(b === 'b')
   console.log(c !== 'c')
   console.log(c !== c)
-  console.log(a > b);
+  console.log(a > b)
 
   // Logical
-  let m = 5, n = 4
+  const m = 5; const n = 4
   const andLogic = (m > n) && (n < m)
-  console.log(andLogic); // true
-  console.log((m > 4) && (n < 5));
-  console.log(true && false); // false
+  console.log(andLogic) // true
+  console.log((m > 4) && (n < 5))
+  console.log(true && false) // false
   const orLogic = (n < m) || (n > m)
-  console.log(orLogic); // true
-  console.log((n < 6) || (m > 7));
-  console.log(false || false); // true
+  console.log(orLogic) // true
+  console.log((n < 6) || (m > 7))
+  console.log(false || false) // false
+  const notLogic = !true
+  console.log(notLogic) // false
+  console.log(!false) // true
 }
 writeOperations(result3)

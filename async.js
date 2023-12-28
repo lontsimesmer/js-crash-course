@@ -49,7 +49,7 @@ async function fetchNumber () {
   await sleep(time)
   console.log('Done')
 }
-fetchNumber ()
+fetchNumber()
 
 // Try-Catch method
 
