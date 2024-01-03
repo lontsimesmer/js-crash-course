@@ -115,5 +115,10 @@ writeOperations = (_result3) => {
   const notLogic = !true
   console.log(notLogic) // false
   console.log(!false) // true
+
+  // String operators
+  console.log('hello' + ' ' + 'world');
+  let value = 'JavaScript'
+  console.log(value += 'tutorial');
 }
 writeOperations(result3)
