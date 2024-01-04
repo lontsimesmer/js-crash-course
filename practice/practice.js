@@ -115,6 +115,9 @@ writeOperations = (_result3) => {
   const notLogic = !true
   console.log(notLogic) // false
   console.log(!false) // true
+  console.log(true && false) // false
+  console.log(true && true) // true
+  console.log(!true || !false) // true
 
   // String operators
   console.log('hello' + ' ' + 'world');

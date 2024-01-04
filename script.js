@@ -1,10 +1,11 @@
 // Variables
-let a
-let b
-const e = 0
+// let a
+// let b
+// const e = 0
 
 // assigment
 c = 'name'
+console.log(c);
 
 //  primitives datatypes
 
