@@ -135,9 +135,14 @@ writeOperations(result3);
 const result4 = 10;
 typeConvert = (_result4) => {
   // Implicit conversion
-  let value = "2" + 5;
+  let value = "2" + 5; // "25"
   console.log(value);
   let value1 = "3" + true;
-  console.log(value1);
+  console.log(value1); // "3true"
+
+  let value2 = '4' - '2'
+  console.log(value2); // 2
+  let value3 = '4' * '2'
+  console.log(value3); // 8
 };
 typeConvert(result4);
