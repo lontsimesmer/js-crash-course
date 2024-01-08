@@ -140,9 +140,14 @@ typeConvert = (_result4) => {
   let value1 = "3" + true;
   console.log(value1); // "3true"
 
-  let value2 = '4' - '2'
+  let value2 = "4" - "2";
   console.log(value2); // 2
-  let value3 = '4' * '2'
+  let value3 = "4" * "2";
   console.log(value3); // 8
+  let value4 = "4" / "2";
+  console.log(value4);
+
+  const res = "hello" - "world";
+  console.log(res);
 };
 typeConvert(result4);
