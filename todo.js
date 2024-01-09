@@ -71,6 +71,7 @@ function requiredInput (e) {
   }
   return valid
 }
+requiredInput()
 
 function markTodoAsDone (index) {
   todos[index].deleted = false
@@ -78,6 +79,7 @@ function markTodoAsDone (index) {
   renderTodos()
   animateTodoOutAndDelete(index)
 }
+markTodoAsDone()
 
 function animateTodoOutAndDelete (index) {
   setTimeout(() => {

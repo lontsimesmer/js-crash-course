@@ -5,7 +5,7 @@
 
 // assigment
 c = 'name'
-console.log(c);
+console.log(c)
 
 //  primitives datatypes
 
