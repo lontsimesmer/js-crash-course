@@ -148,6 +148,12 @@ typeConvert = (_result4) => {
   console.log(value4);
 
   const res = "hello" - "world";
-  console.log(res);
+  console.log(res); // NaN
+  const res1 = "4" - "Hello";
+  console.log(res1); // NaN
+  const res2 = "4" - true;
+  console.log(res2); // 3
+  const res3 = "4" - false;
+  console.log(res3); // 4
 };
 typeConvert(result4);
