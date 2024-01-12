@@ -4,16 +4,16 @@
 // const e = 0
 
 // assigment
-c = 'name'
+const c = 'name'
 console.log(c)
 
 //  primitives datatypes
 
 //  numbers
-const age = 10
+// const age = 10
 
 // booleans
-const isDorineAngryAtheJSTeacher = true
+// const isDorineAngryAtheJSTeacher = true
 
 // String
 const student1 = 'Dorren'
