@@ -159,5 +159,8 @@ typeConvert = (_result4) => {
   console.log(res4);
   const res5 = Number("237e-1");
   console.log(res5);
+
+  const num = Number(null);
+  console.log(num);
 };
 typeConvert(result4);
