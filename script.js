@@ -25,7 +25,7 @@ console.log(mondayTeacher)
 
 // Arrays
 const arr1 = []
-const arr2 = [4] // arrays with 4 spaces empty
+// const arr2 = [4] // arrays with 4 spaces empty
 arr1[3] = 5 // in position 3 put the value 5
 arr1.push(4) // in a la fin du array ajoute 4
 arr1.pop() // ca va montrer le denier index en le retirant
@@ -45,8 +45,10 @@ console.log({ ...teachers }) // print teachers
 const profs = teachers
 profs.javascript = 'jules' // Carleson = jules
 console.log({ ...profs }, { ...teachers }) // la var profs aura les meme propr de teacher et les deux changerons leur noms javascript en jules
-teachers.javascript // to get a value of an object
-teachers.javascript // to get a value of an object
+const role = teachers.javascript // to get a value of an object
+console.log(role)
+const role1 = teachers.javascript // to get a value of an object
+console.log(role1)
 
 // conditional logic
 
@@ -58,11 +60,12 @@ teachers.javascript // to get a value of an object
 
 const log = (message, status = 'error') =>
   `${new Date().toUTCString()} ${status}  ${message} ` // Anonyms function
+log()
 
 function craeteLogger () {
   // higher order function (function that return another function)
   function writeToConsole (message, status) {
-    console.log(log(a, b))
+    // console.log(log(a, b));
   }
   return writeToConsole
 }
@@ -106,6 +109,7 @@ const fib = (n) => {
   if (n < 2) return n
   return fib(n - 1) + fib(n - 2)
 }
+fib(n)
 
 const optimizedFib = () => {
   if (n < 2) return n
@@ -113,6 +117,7 @@ const optimizedFib = () => {
   const i = 2
   while (i <= 0) {}
 }
+optimizedFib()
 
 // reduce function
 
