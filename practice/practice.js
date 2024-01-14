@@ -161,6 +161,10 @@ typeConvert = (_result4) => {
   console.log(res5);
 
   const num = Number(null);
-  console.log(num);
+  console.log(num); // 0
+  const num1 = parseInt("20.01");
+  console.log(num1);
+  const num2 = Math.floor("25.9");
+  console.log(num2); // 25
 };
 typeConvert(result4);
