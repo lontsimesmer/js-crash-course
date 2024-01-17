@@ -160,7 +160,7 @@ typeConvert = (_result4) => {
   const res5 = Number("237e-1");
   console.log(res5);
   const res6 = Number("");
-  console.log(res6);
+  console.log(res6); // 0
 
   const num = Number(null);
   console.log(num); // 0

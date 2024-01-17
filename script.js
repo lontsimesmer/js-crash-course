@@ -83,7 +83,7 @@ const studentsList = Array(500)
 function findUpperHalf(callback) {
   for (const student of studentsList) {
     if (student >= 5) {
-      callback;
+      console.log(callback);
     }
   }
 }
