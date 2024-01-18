@@ -157,6 +157,8 @@ typeConvert = (_result4) => {
   console.log(res3); // 4
   const res4 = null + undefined;
   console.log(res4);
+
+  // Explicit conversion
   const res5 = Number("237e-1");
   console.log(res5);
   const res6 = Number("");
@@ -168,5 +170,10 @@ typeConvert = (_result4) => {
   console.log(num1);
   const num2 = Math.floor("25.9");
   console.log(num2); // 25
+
+  const str = String(237);
+  console.log(str);
+  const str1 = (237).toString();
+  console.log(str1);
 };
 typeConvert(result4);
