@@ -177,6 +177,12 @@ typeConvert = (_result4) => {
   console.log(str1);
 
   const req = Boolean("");
-  console.log(req);
+  console.log(req); // false
+  const req1 = Boolean(undefined);
+  console.log(req1); // false
+  const req2 = Boolean(360);
+  console.log(req2); // true
+  const req3 = Boolean("hello");
+  console.log(req3); // true
 };
 typeConvert(result4);
