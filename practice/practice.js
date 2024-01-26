@@ -184,5 +184,7 @@ typeConvert = (_result4) => {
   console.log(req2) // true
   const req3 = Boolean('hello')
   console.log(req3) // true
+  const req4 = Boolean(NaN)
+  console.log(req4) // NaN
 }
 typeConvert(result4)

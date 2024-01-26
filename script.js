@@ -104,7 +104,7 @@ printSum()
 
 // FibonacciFunctions
 
-const n = number
+const n = 'number'
 const fib = (n) => {
   // simple manner
   if (n < 2) return n
@@ -117,7 +117,13 @@ const optimizedFib = () => {
   const memo = { 0: 0, 1: 1 }
   console.log(memo)
   const i = 2
-  while (i <= 0) {}
+  while (i <= 0) {
+    if (i !== 2) {
+      return 0
+    } else {
+      console.log(0);
+    }
+  }
 }
 optimizedFib()
 
